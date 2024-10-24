@@ -1,0 +1,30 @@
+<odoo>
+    <template id="category_hierarchy_report_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h3>Parent Categories:</h3>
+                    </div>
+                    </t>
+                </t>
+            </t>
+        <!-- <t t-name="category_hierarchy_report_template">
+            <t t-foreach="doc" t-as="product">
+                <h2>Category Hierarchy Report for Product: <t t-esc="product.name"/></h2>
+                <h3>Parent Categories:</h3>
+                <ul>
+                    <t t-foreach="product.parent_categories" t-as="category">
+                        <li><t t-esc="category.name"/></li>
+                    </t>
+                </ul>
+                <h3>Child Categories:</h3>
+                <ul>
+                    <t t-foreach="product.child_categories" t-as="category">
+                        <li><t t-esc="category.name"/></li>
+                    </t>
+                </ul>
+            </t>
+        </t> -->
+    </template>
+</odoo>
